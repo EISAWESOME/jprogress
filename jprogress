@@ -15,8 +15,6 @@ y|Y )
  echo "Boom."
  printf '\e[m'
 
-#jpegtran -progressive foo.jpg > fooprog.jpg
-
 for i in *.jpg; do
 
 filename=${i%.*}
