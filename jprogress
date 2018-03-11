@@ -18,7 +18,7 @@ y|Y )
 for i in *.jpg; do
 
 filename=${i%.*}
-jpegtran -progressive "$filename.jpg" > "$filename@p.jpg"
+jpegtran -progressive "$filename.jpg" "$filename@p.jpg"
 rm $filename.jpg
 mv "$filename@p.jpg" "$filename.jpg"
 echo "- $filename.jpg converted to progressive -"
